@@ -1,0 +1,35 @@
+.navbarContainer {
+  width: 100%;
+  height: 60px;
+  background: #212731;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbarContent {
+  display: flex;
+  margin-right: 10px;
+  justify-content: space-around;
+}
+.searchInput {
+  margin-right: 5rem;
+  position: relative;
+}
+.searchInput input {
+  height: 37px;
+  width: 258px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.searchInput svg {
+  position: absolute;
+  color: gray;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.linkContainer {
+  display: flex;
+  margin: auto;
+}

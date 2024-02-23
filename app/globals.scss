@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.homeSection {
+  padding: 0rem 7rem;
+  margin-top: 3rem;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #d1d6da;
+  margin-right: 55px;
+  text-decoration: none;
+  transition: all;
+}
+.link:hover {
+    color: white;
+    text-decoration: underline;
+}
