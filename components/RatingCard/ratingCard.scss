@@ -1,0 +1,37 @@
+.ratingCardContainer {
+  width: 135px;
+  height: 118px;
+  position: relative;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background: #f3f9ff;
+  top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #074786;
+
+  .ratingNumber {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+ 
+  .ratingText {
+    font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+  }
+  .stars {
+    aspect-ratio: 1;
+    scale: 0.5;
+  }
+}

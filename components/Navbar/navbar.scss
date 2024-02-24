@@ -33,3 +33,18 @@
   display: flex;
   margin: auto;
 }
+.link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #d1d6da;
+  margin-right: 55px;
+  text-decoration: none;
+  transition: all;
+}
+.link:hover {
+    color: white;
+    text-decoration: underline;
+}
