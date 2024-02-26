@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { cardData } from '@/util/data';
 import './cardsSection.scss';
 import Card from '../Card/Card';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'; // Import IoIosArrowUp
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'; 
 import Image from 'next/image';
 import Button from '../Button/Button';
 import RatingCard from '../RatingCard/RatingCard';
@@ -55,9 +55,9 @@ const CardsSection = () => {
                 {showMainHighlight ? 'Show less' : 'Show more'}
               </span>
               {showMainHighlight ? (
-                <IoIosArrowUp size={15} /> // Use IoIosArrowUp when showMainHighlight is true
+                <IoIosArrowUp size={15} /> 
               ) : (
-                <IoIosArrowDown size={15} /> // Use IoIosArrowDown when showMainHighlight is false
+                <IoIosArrowDown size={15} /> 
               )}
             </div>
           </div>

@@ -115,9 +115,9 @@ const LastCard = () => {
                 {showMainHighlight ? 'Show less' : 'Show more'}
               </span>
               {showMainHighlight ? (
-                <IoIosArrowUp size={15} /> // Use IoIosArrowUp when showMainHighlight is true
+                <IoIosArrowUp size={15} /> 
               ) : (
-                <IoIosArrowDown size={15} /> // Use IoIosArrowDown when showMainHighlight is false
+                <IoIosArrowDown size={15} /> 
               )}
             </div>
       </div>
