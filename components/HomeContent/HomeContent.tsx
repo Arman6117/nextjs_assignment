@@ -1,5 +1,6 @@
 import CardsSection from "../CardsSection/CardsSection";
 import InfoBar from "../InfoBar/InfoBar";
+import RelatedDealSection from "../RelatedDeals/RelatedDealSection";
 import Route from "../Route/Route";
 import Tile from "../Tile/Tile";
 import "./homeContent.scss";
@@ -30,6 +31,10 @@ const HomeContent = () => {
       <div>
         <CardsSection/>
       </div>
+      <section className="relatedDealSection">
+        <h1 className="relatedDealsTitle">Related deals you might like for</h1>
+        <RelatedDealSection/>
+      </section>
     </div>
   );
 };

@@ -12,7 +12,7 @@ const RatingCard = ({image, rating, ratingValue }: RatingCard) => {
   return <div className={clsx("ratingCardContainer")}>
     <span className="ratingNumber">{rating}</span>
     <span className="ratingText">{ratingValue}</span>
-    <Image src={image} alt="stars" width={100} height={20} className="stars"/>
+    <Image src={image} alt="stars" width={100} height={0} className="stars"/>
 
   </div>;
 };

@@ -1,5 +1,6 @@
-import React from "react";
-import { IoIosArrowDown } from "react-icons/io";
+'use client'
+import React, { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Card from "../Card/Card";
 import Image from "next/image";
 import RatingCard from "../RatingCard/RatingCard";
@@ -14,6 +15,10 @@ const mainHighlight = [
   { rating: 8.9, text: "Docs" },
 ];
 const LastCard = () => {
+  const [showMainHighlight, setShowMainHighlight] = useState(false);
+  const toggleMainHighlight = () => {
+    setShowMainHighlight(!showMainHighlight);
+  };
   return (
     <Card className="lastCard">
       <div className="numCircle">
@@ -39,6 +44,8 @@ const LastCard = () => {
             </span>
           </span>
         </div>
+            {showMainHighlight && (
+              <>
         <div className="highlight">
           <h1 className="highlightText">Main highlights</h1>
           <p className="highlightDesc">
@@ -70,10 +77,18 @@ const LastCard = () => {
           </div>
         </div>
           </div>
-        <div className="btn">
-          <span className="btnText">Show more</span>
-          <IoIosArrowDown size={15} />
-        </div>
+              </>
+          )}
+        <div className="btn mb-10 md:pointer-events-none cursor-pointer" onClick={toggleMainHighlight}>
+              <span className="btnText">
+                {showMainHighlight ? 'Show less' : 'Show more'}
+              </span>
+              {showMainHighlight ? (
+                <IoIosArrowUp size={15} /> // Use IoIosArrowUp when showMainHighlight is true
+              ) : (
+                <IoIosArrowDown size={15} /> // Use IoIosArrowDown when showMainHighlight is false
+              )}
+            </div>
       </div>
       <div className="rating">
         <RatingCard
@@ -88,3 +103,5 @@ const LastCard = () => {
 };
 
 export default LastCard;
+
+

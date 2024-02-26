@@ -3,6 +3,8 @@
   flex-direction: column;
   margin-top: 3rem;
   gap: 3rem;
+  transition: height 0.3s ease; 
+
 }
 .numCircle {
   position: absolute;
@@ -43,7 +45,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 60%;
-
+  gap: 1rem;
   .titleDesc {
     display: flex;
 
@@ -103,5 +105,30 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  
 }
 
+
+
+@media (max-width: 768px) {
+  .cardContentSm {
+    padding: 10px 0px; 
+    flex-direction: column;
+    align-items: center;
+  }
+  .highlightDesc {
+    font-size: 14px; 
+  }
+
+  .cardSectionCard {
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+  .homeSection {
+    padding: 0 2rem;
+  }
+}
+
+/* Styles when main highlight is toggled */

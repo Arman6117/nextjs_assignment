@@ -1,7 +1,6 @@
 .cardContainer {
   width: 100%;
   background: rgb(255, 255, 255);
-  height: 255px;
   border-radius: 12px;
   filter: drop-shadow(0 2px 2px rgb(0 0 0 / 0.07))
     drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
@@ -9,30 +8,26 @@
 
 .cardContent {
   display: flex;
-  gap: 3rem;
-  padding: 10px 30px;
   justify-content: space-between;
 }
+
 .badge {
-    position: absolute;
-    width: 136px;
-    height: 34px;
-    top: -1rem;
-    left: 0rem;
-    display: flex;
-    align-items: center;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    background: #ff7724;
-    color: white;
-    gap: 0.75rem;
+  position: absolute;
+  top: -1rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #ff7724;
+  color: white;
+  gap: 0.75rem;
 
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 
-    padding: 0 0 0 10px;
-  }
-  
+  padding: 0 0 0 10px;
+}

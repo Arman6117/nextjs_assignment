@@ -1,0 +1,46 @@
+.relatedDealContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  .relatedDealCard {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+
+    .relatedDealCardContent {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    
+    }
+
+    .discountTiles {
+      float: left;
+      position: relative;
+      //   right: 50%;
+      right: 10%;
+      display: flex;
+      gap: 0.75rem;
+      .tile {
+        width: 69px;
+        height: 28px;
+        background: #f2f4f7;
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #074786;
+
+        border-radius: 8px;
+      }
+      :nth-child(2) {
+        width: 120px;
+      }
+    }
+    
+  }
+}
