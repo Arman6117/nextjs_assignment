@@ -20,9 +20,9 @@ const HomeContent = () => {
       <div className="">
         <InfoBar />
       </div>
-      <div className="tileContainer">
+      <div className="tileContainer scrollbar-none h-full">
         {tileData.map((item) => (
-          <Tile key={item}>{item}</Tile>
+          <Tile key={item} className=" scrollbar-none">{item}</Tile>
         ))}
       </div>
       <div >

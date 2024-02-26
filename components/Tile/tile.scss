@@ -16,3 +16,10 @@
   text-align: left;
   
 }
+
+@media (max-width: 768px) {
+
+  .tileContent {
+    padding: 20px 30px
+  }
+}
