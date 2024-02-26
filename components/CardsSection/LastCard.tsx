@@ -44,6 +44,37 @@ const LastCard = () => {
             </span>
           </span>
         </div>
+        <div className="highlight hidden md:block">
+          <h1 className="highlightText">Main highlights</h1>
+          <p className="highlightDesc">
+            <div className="highlightContentContainer">
+              {mainHighlight.map((item) => (
+                <div key={item.rating} className="highlightContent">
+                  <Tile className="lastCardTile">{item.rating}</Tile>
+                  <span className="lastCardText">{item.text}</span>
+                </div>
+              ))}
+            </div>
+          </p>
+        </div>
+        <div className="whyWeLoveIt">
+          <h2 className="something">Why we love it</h2>
+          <div className="allContent">
+
+          <div className="content">
+            <CiCircleCheck size={24} color="#0855A1" />
+            <span>Documentation</span>
+          </div>
+          <div className="content">
+            <CiCircleCheck size={24} color="#0855A1" />
+            <span>Easy to use</span>
+          </div>
+          <div className="content">
+            <CiCircleCheck size={24} color="#0855A1" />
+            <span>Documentation</span>
+          </div>
+        </div>
+          </div>
             {showMainHighlight && (
               <>
         <div className="highlight">
