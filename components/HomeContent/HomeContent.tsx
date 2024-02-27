@@ -20,9 +20,9 @@ const HomeContent = () => {
       <div className="">
         <InfoBar />
       </div>
-      <div className="tileContainer scrollbar-none h-full">
+      <div className="tileContainer flex-wrap justify-evenly">
         {tileData.map((item) => (
-          <Tile key={item} className=" scrollbar-none">{item}</Tile>
+          <Tile key={item} className="w-auto md:w-[105px]">{item}</Tile>
         ))}
       </div>
       <div >

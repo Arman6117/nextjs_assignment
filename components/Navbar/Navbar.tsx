@@ -18,12 +18,12 @@ const Navbar = () => {
   };
   return (
     <nav aria-label="Main navigation">
-      <ul className="flex  flex-col justify-between rounded-b-lg bg-slate-50  md:flex-row md:items-center md:rounded-xl">
+      <ul className="flex  flex-col justify-between rounded-b-lg bg-slate-800  md:flex-row md:items-center md:rounded-xl">
         <div className="flex items-center justify-end">
           <button
             aria-expanded={open}
             aria-label="Open menu"
-            className="block p-2 text-2xl text-slate-800 md:hidden"
+            className="block p-2 text-2xl text-slate-50 md:hidden"
             onClick={() => setOpen(true)}
           >
             <MdMenu />
@@ -31,26 +31,26 @@ const Navbar = () => {
         </div>
         <div
           className={clsx(
-            "fixed bottom-0 left-0 right-0 top-0 z-50 flex  flex-col items-center gap-4 bg-slate-900 pr-4 pt-14 transition-transform duration-300 ease-in-out md:hidden",
+            "fixed bottom-0 left-0 right-0 top-0 z-50 flex  flex-col items-center  space-y-10 bg-slate-50 pr-4 pt-24 transition-transform duration-300 ease-in-out md:hidden",
             open ? "translate-x-0" : "translate-x-[100%]"
           )}
         >
           <button
             aria-label="Close menu"
             aria-expanded={open}
-            className="fixed right-4 top-3 block p-2 text-2xl text-slate-50 md:hidden "
+            className="fixed right-4 top-3 block p-2 text-2xl text-slate-800 md:hidden "
             onClick={() => setOpen(false)}
           >
             <MdClose />
           </button>
 
-          <li className="flex items-center">
+          <li className="flex items-center relative left-10">
             <div className="searchInput">
-              {isIconVisible && <BiSearch size={25} className="searchIcon" />}
+              {isIconVisible && <BiSearch size={25} color="white"  />}
               <input
                 onFocus={handleInputFocus}
                 onBlur={() => setIsIconVisible(true)}
-                className=""
+                className="bg-slate-500 text-slate-50 px-3 font-semibold text-xl shadow-lg"
               />
             </div>
           </li>
@@ -58,9 +58,9 @@ const Navbar = () => {
             <React.Fragment key={link}>
               <li className="first:mt-8">
                 <Link
-                  href={link}
+                  href={'#'}
                   className={clsx(
-                    "group relative block overflow-hidden rounded px-3 text-3xl font-bold text-slate-50 "
+                    "group relative block overflow-hidden rounded px-3 text-4xl font-bold text-slate-700 hover:text-slate-50"
                   )}
                   onClick={() => setOpen(false)}
                 >
@@ -83,7 +83,6 @@ const Navbar = () => {
             </React.Fragment>
           ))}
           <li>
-            {/* <Button label="Contact" linkField="/contact" className="ml-3" /> */}
           </li>
         </div>
         <DesktopMenu />
