@@ -32,6 +32,11 @@ body {
 
 .relatedDealSection {
   margin-top: 10rem;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .relatedDealsTitle {
     font-family: Inter;
     font-size: 32px;

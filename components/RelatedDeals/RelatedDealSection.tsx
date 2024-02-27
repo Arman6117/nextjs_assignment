@@ -7,7 +7,7 @@ import Tile from "../Tile/Tile";
 import Button from "../Button/Button";
 const RelatedDealSection = () => {
   const elements = Array.from({ length: 3 }, (_, index) => (
-    <Card key={index} className="relatedDealCard  w-full h-full  ">
+    <Card key={index} className="relatedDealCard md:scale-100 scale-100  w-full h-full  ">
       <div className="relatedDealCardContent w-full">
         <Image
           src={"/image.png"}
@@ -44,7 +44,7 @@ const RelatedDealSection = () => {
   ));
 
   return (
-    <div className="relatedDealContainer space-y-16 w-full flex flex-col py-10 ">
+    <div className="relatedDealContainer space-y-16 flex flex-col py-10 ">
       <div className=" flex sm:flex-row sm:flex-wrap space-y-10 justify-evenly flex-col">
         {elements}
       </div>
