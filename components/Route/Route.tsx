@@ -12,12 +12,12 @@ const routeData = [
 ];
 const Route = () => {
   return (
-    <div className="routeContainer">
+    <div className="routeContainer md:scale-100 scale-75">
       {routeData.map((route, index) => (
         <React.Fragment key={index}>
           <span>{route}</span>
           {index !== routeData.length - 1 && (
-            <MdOutlineArrowForwardIos />
+            <MdOutlineArrowForwardIos  size={30}/>
           )}
         </React.Fragment>
       ))}
